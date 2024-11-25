@@ -1,6 +1,6 @@
 ﻿namespace TaskTracker.Models;
 
-public class Task
+public class TaskItem
 {
     public int Id { get; set; }
     public string Name { get; set; }
