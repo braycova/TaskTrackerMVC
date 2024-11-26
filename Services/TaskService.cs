@@ -28,6 +28,12 @@ public class TaskService
         SaveTasks(tasks);
     }
 
+    public TaskItem GetTaskById(int id)
+    {
+        var tasks = GetTasks();
+        return tasks.FirstOrDefault(t => t.Id == id);
+    } 
+
     public void DeleteTask(int taskId)
     {
         var tasks = GetTasks();
